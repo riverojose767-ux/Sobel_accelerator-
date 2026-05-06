@@ -1,0 +1,22 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "par.outputs.output_ilms": [],
+    "par.outputs.output_ilms_meta": "append",
+    "par.outputs.output_gds": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.gds",
+    "par.outputs.output_netlist": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.lvs.v",
+    "par.outputs.output_sim_netlist": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.sim.v",
+    "par.outputs.hcells_list": [],
+    "par.outputs.seq_cells": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/find_regs_cells.json",
+    "par.outputs.all_regs": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/find_regs_paths.json",
+    "par.inputs.input_files": [
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.v"
+    ],
+    "par.inputs.top_module": "sobel_top",
+    "par.outputs.sdf_file": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.par.sdf",
+    "par.outputs.sdc_file": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.par.sdc",
+    "par.outputs.spefs": [
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.ss_100C_1v60.par.spef",
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.ff_n40C_1v95.par.spef",
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.tt_025C_1v80.par.spef"
+    ]
+}

@@ -1,0 +1,21 @@
+# Toplevel simulation module name
+# sim.inputs.tb_name: "sobel_tb"
+sim.inputs.tb_name: "sobel_tb"
+
+# Search directories for `include directives in simulations
+sim.inputs.tb_incdir: [
+  "${bsg_root}/bsg_misc"
+]
+sim.inputs.tb_incdir_meta: [subst]
+
+# Additional source files for simulations
+sim.inputs.tb_input_files: [
+  "v/sobel_tb.v",
+  "${bsg_root}/bsg_test/bsg_nonsynth_clock_gen.v",
+  "${bsg_root}/bsg_clk_gen/bsg_nonsynth_clk_watcher.v",
+]
+sim.inputs.tb_input_files_meta: [subst]
+
+# Add synthesis input files to simulation inputs only for RTL sim
+sim.inputs.input_files: synthesis.inputs.input_files
+sim.inputs.input_files_meta: [crossref, subst]

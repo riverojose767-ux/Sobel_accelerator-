@@ -1,0 +1,8 @@
+/home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
+/home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
+v/image_input.v
+v/line_buffer.v
+v/sobel_gradient.v
+v/sobel_tb.v
+v/sobel_top.v
+v/threshold_unit.v

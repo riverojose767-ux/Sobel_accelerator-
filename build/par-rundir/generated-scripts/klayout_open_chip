@@ -1,0 +1,3 @@
+#!/bin/bash
+export RUBYLIB=/home/projects/ee477.2025wtr/cad/klayout/bin-release/ruby/lib64/ruby:/home/projects/ee477.2025wtr/cad/klayout/bin-release/ruby/lib64/rubygems:/home/projects/ee477.2025wtr/cad/klayout/bin-release/ruby/share/ruby;
+/home/projects/ee477.2025wtr/cad/klayout/bin-release/klayout -l /home/projects/ee477.2025wtr/cad/pdk/sky130A/libs.tech/klayout/sky130A.lyp /home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.gds &

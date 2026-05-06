@@ -1,0 +1,12 @@
+*design* DebussyLib (btIdent Verdi_Q-2020.03-SP1)
+Command arguments:  -lib  /home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/work  -saveLevel  -elab  /home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/kdb  -simflow  -simdir  /home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/kdb_libs  -topfile  /home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/.elabcomTopFile  -ssv  -ssy  -Lf  work  +disable_message+C00380+C00381  +disable_message+C00388+C00389  -SNPS_ELABCOM  -saveElab 
+
+*Warning* Failed to find the specified instance parameter IMAGE_WIDTH in the master sobel_top
+"v/sobel_tb.v", 467: 
+
+*Warning* Failed to find the specified instance parameter IMAGE_HEIGHT in the master sobel_top
+"v/sobel_tb.v", 467: 
+
+*Warning* Failed to find the specified instance parameter THRESHOLD_WIDTH in the master sobel_top
+"v/sobel_tb.v", 467: 
+Total	0 error(s),   3 warning(s)

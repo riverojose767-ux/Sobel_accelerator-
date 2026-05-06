@@ -1,0 +1,150 @@
+{
+    "bsg_root": "/home/josee767/ee478/basejump_stl",
+    "vlsi.core.local_tool_path": "/home/josee767/ee478/ee477-hammer-cad",
+    "vlsi.core.max_threads": 8,
+    "vlsi.core.build_system": "make",
+    "vlsi.core.technology": "sky130",
+    "vlsi.core.node": 130,
+    "vlsi.core.sram_generator_tool": "fakeram",
+    "vlsi.core.synthesis_tool": "genus",
+    "vlsi.core.par_tool": "innovus",
+    "vlsi.core.sim_tool": "vcs",
+    "vlsi.core.drc_tool": "magic",
+    "vlsi.core.lvs_tool": "netgen",
+    "vlsi.core.formal_tool": "conformal",
+    "vlsi.core.timing_tool": "tempus",
+    "sim.vcs.disable_fgp": true,
+    "sim.vcs.disable_force_regs": true,
+    "synthesis.genus.write_sdf_args": [
+        "-nosplit_timing_check",
+        "-timescale ns"
+    ],
+    "par.innovus.design_flow_effort": "extreme",
+    "sram_generator.fakeram.pinPitch_nm": 700,
+    "sim.inputs.top_module": "UNSPECIFIED",
+    "sim.inputs.timescale": "1ns/1ps",
+    "sim.inputs.timing_annotated": true,
+    "sim.inputs.options": [
+        "+vcs+vcdpluson",
+        "+vcs+vcdplusmemon",
+        "+vcs+vcdplusautoflushon",
+        "-sverilog",
+        "-debug_pp",
+        "+define+FUNCTIONAL",
+        "+define+UNIT_DELAY",
+        "+warn=noSDFCOM_UHICD",
+        "+warn=noSDFCOM_ANICD"
+    ],
+    "vlsi.inputs.clocks": [
+        {
+            "name": "clk",
+            "period": "15ns",
+            "uncertainty": "0.1ns"
+        }
+    ],
+    "vlsi.inputs.sram_parameters": [],
+    "vlsi.inputs.power_spec_mode": "auto",
+    "vlsi.inputs.power_spec_type": "cpf",
+    "vlsi.inputs.default_output_load": 0.005,
+    "par.power_straps_mode": "generate",
+    "par.generate_power_straps_method": "by_tracks",
+    "par.blockage_spacing": 3.0,
+    "par.blockage_spacing_top_layer": "met4",
+    "par.generate_power_straps_options.by_tracks.strap_layers": [
+        "met4",
+        "met5"
+    ],
+    "par.generate_power_straps_options.by_tracks.pin_layers": [
+        "met5"
+    ],
+    "par.generate_power_straps_options.by_tracks.blockage_spacing_met2": 4.0,
+    "par.generate_power_straps_options.by_tracks.track_width": 6,
+    "par.generate_power_straps_options.by_tracks.track_width_met5": 2,
+    "par.generate_power_straps_options.by_tracks.track_spacing": 1,
+    "par.generate_power_straps_options.by_tracks.track_start": 10,
+    "par.generate_power_straps_options.by_tracks.track_start_met5": 1,
+    "par.generate_power_straps_options.by_tracks.power_utilization": 0.1,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met4": 0.3,
+    "par.generate_power_straps_options.by_tracks.power_utilization_met5": 0.5,
+    "vlsi.inputs.placement_constraints": [
+        {
+            "path": "TOP",
+            "type": "toplevel",
+            "width": 1000,
+            "height": 1000,
+            "x": 0,
+            "y": 0,
+            "margins": {
+                "left": 0,
+                "right": 0,
+                "top": 0,
+                "bottom": 0
+            }
+        }
+    ],
+    "vlsi.inputs.pin_mode": "generated",
+    "vlsi.inputs.pin.generate_mode": "semi_auto",
+    "vlsi.inputs.pin.assignments": [
+        {
+            "pins": "*",
+            "layers": [
+                "met2",
+                "met4"
+            ],
+            "side": "bottom"
+        }
+    ],
+    "synthesis.inputs.input_files": [
+        "v/image_input.v",
+        "v/line_buffer.v",
+        "v/sobel_gradient.v",
+        "v/threshold_unit.v",
+        "v/sobel_top.v"
+    ],
+    "synthesis.inputs.top_module": "sobel_top",
+    "synthesis.inputs.preserve_modules": [],
+    "synthesis.syn_map": true,
+    "vlsi.inputs.output_loads": [
+        {
+            "name": "edge_out",
+            "load": 0.01
+        },
+        {
+            "name": "valid_edge",
+            "load": 0.01
+        },
+        {
+            "name": "frame_done",
+            "load": 0.01
+        }
+    ],
+    "vlsi.inputs.custom_sdc_constraints": [],
+    "vlsi.technology.extra_libraries": [],
+    "synthesis.outputs.output_files": [
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.v"
+    ],
+    "synthesis.outputs.sdc": "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.sdf",
+    "par.inputs.input_files": [
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.v"
+    ],
+    "par.inputs.top_module": "sobel_top",
+    "par.inputs.post_synth_sdc": "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.sdc",
+    "par.outputs.output_ilms": [],
+    "par.outputs.output_ilms_meta": "append",
+    "par.outputs.output_gds": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.gds",
+    "par.outputs.output_netlist": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.lvs.v",
+    "par.outputs.output_sim_netlist": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.sim.v",
+    "par.outputs.hcells_list": [],
+    "par.outputs.seq_cells": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/find_regs_cells.json",
+    "par.outputs.all_regs": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/find_regs_paths.json",
+    "par.outputs.sdf_file": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.par.sdf",
+    "par.outputs.sdc_file": "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.par.sdc",
+    "par.outputs.spefs": [
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.ss_100C_1v60.par.spef",
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.ff_n40C_1v95.par.spef",
+        "/home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.tt_025C_1v80.par.spef"
+    ]
+}

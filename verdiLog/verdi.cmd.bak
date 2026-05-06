@@ -1,0 +1,79 @@
+simSetSimulator "-vcssv" -exec \
+           "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv" \
+           -args
+debImport "-full64" "-dbdir" \
+          "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir"
+debLoadSimResult \
+           /home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/waveform.fsdb
+debLoadSDFFile \
+           "/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.sdf" \
+           -design sobel_top
+wvCreateWindow
+srcHBSelect "sobel_tb.dut.lb" -win $_nTrace1
+srcHBSelect "sobel_tb.dut.lb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "sobel_tb.dut.lb" -delim "."
+srcHBSelect "sobel_tb.dut.lb" -win $_nTrace1
+srcHBSelect "sobel_tb" -win $_nTrace1
+srcHBSelect "sobel_tb" -win $_nTrace1
+srcHBSelect "sobel_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "sobel_tb" -delim "."
+srcHBSelect "sobel_tb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {447 447 2 3 1 1} -backward
+srcDeselectAll -win $_nTrace1
+srcAction -pos 446 1 2 -win $_nTrace1 -name "sobel_top" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcAction -pos 446 1 2 -win $_nTrace1 -name "sobel_top" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 446 1 3 -win $_nTrace1 -name "sobel_top" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcHBSelect "sobel_tb.dut" -win $_nTrace1
+srcHBSelect "sobel_tb.dut" -win $_nTrace1
+srcSetScope -win $_nTrace1 "sobel_tb.dut" -delim "."
+srcHBSelect "sobel_tb.dut" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 5763 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reset" -line 5764 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "pixel_stream" -line 5764 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "valid_stream" -line 5764 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "start_stream" -line 5765 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "p1" -line 5765 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "valid_window" -line 5767 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "debug_col" -line 5767 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "debug_row" -line 5768 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 623.518244 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 622.827453 -snap {("G1" 4)}
+wvSetCursor -win $_nWave2 627.291026 -snap {("G1" 4)}
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {5727 5796 1 1 1 1}
+nsMsgSwitchTab -tab cmpl
+debExit

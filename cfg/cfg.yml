@@ -1,0 +1,44 @@
+# List of all Verilog/SystemVerilog source files to include in this build.
+synthesis.inputs.input_files: [
+  "v/image_input.v",
+  "v/line_buffer.v",
+  "v/sobel_gradient.v",
+  "v/threshold_unit.v",
+  "v/sobel_top.v",
+]
+synthesis.inputs.input_files_meta: [append, subst]
+
+# Set top level for synthesis
+#synthesis.inputs.top_module: "sobel_top"
+synthesis.inputs.top_module: "sobel_top"
+
+# No preserved modules for now
+synthesis.inputs.preserve_modules: []
+
+# Allow normal synthesis mapping
+synthesis.syn_map: True
+
+# Clock constraint
+vlsi.inputs.clocks:
+  - name: "clk"
+    period: "15ns"
+    uncertainty: "0.1ns"
+
+# Custom output loads
+vlsi.inputs.output_loads:
+  - {name: edge_out, load: 0.01}
+  - {name: valid_edge, load: 0.01}
+  - {name: frame_done, load: 0.01}
+
+# No custom SDC constraints yet
+vlsi.inputs.custom_sdc_constraints: []
+
+# Placement Constraints
+vlsi.inputs.placement_constraints:
+  - path: "TOP"
+    type: toplevel
+    width:  1000
+    height: 1000
+    x: 0
+    y: 0
+    margins: {left: 0, right: 0, top: 0, bottom: 0}

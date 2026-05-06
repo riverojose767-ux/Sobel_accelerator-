@@ -1,0 +1,10 @@
+Summary of valid data for /home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.sdf:
+
+      1800 CELL(s)
+         0 PATHCONSTRAINT(s)
+         0 INTERCONNECT(s)
+      3915 IOPATH(s)
+      4540 PORTDELAY(s)
+Data version: 1.41
+Current version: 1.41
+PathConstraint(0) InterConnect(0) IOPath(3915) PortDelay(4540)
