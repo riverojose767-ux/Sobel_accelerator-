@@ -36,28 +36,3 @@ for i, value in enumerate(pixels):
 
 img.save("hardware_edges.png")
 print("Saved hardware_edges.png")
-
-
-# from PIL import Image
-
-# IMG_W = 32
-# IMG_H = 32
-
-# pixels = []
-
-# with open("edge_output.txt", "r") as f:
-#     for line in f:
-#         value = int(line.strip())
-#         pixels.append(255 if value else 0)
-
-# img = Image.new("L", (IMG_W, IMG_H), 0)
-
-# for i, value in enumerate(pixels):
-#     if i < IMG_W * IMG_H:
-#         x = i % IMG_W
-#         y = i // IMG_W
-#         img.putpixel((x, y), value)
-
-# img.save("hardware_edges.png")
-
-# print("Created hardware_edges.png")

@@ -57,17 +57,3 @@ module sobel_gradient (
     end
    
 endmodule
-
- // always_ff @(posedge clk) begin
-    //     if (reset) begin
-    //         gradient_magnitude <= 0;
-    //         valid_grad         <= 0;
-    //     end else begin
-    //         valid_grad <= valid_window;
-    //         // always update so gradient_magnitude aligns with valid_grad
-    //         if (sum > 13'd2047)
-    //             gradient_magnitude <= 11'd2047;
-    //         else
-    //             gradient_magnitude <= sum[10:0];
-    //     end
-    // end

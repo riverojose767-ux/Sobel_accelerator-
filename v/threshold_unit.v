@@ -23,22 +23,3 @@ module threshold_unit #(
         end
     end
 endmodule 
-
-    // always_ff@(posedge clk) begin 
-    //     if (reset) begin
-    //         edge_out <= 0;
-    //         valid_edge <= 0;
-    //     end else begin 
-    //         valid_edge <= valid_grad; // Default to not valid
-    //         if (valid_grad) begin
-    //             if (gradient_magnitude > threshold_value) begin
-    //                 edge_out <= 1;
-    //             end else begin
-    //                 edge_out <= 0;
-    //             end
-    //         end else begin
-    //             edge_out <= 0; // Output zero when the input gradient is not valid
-    //             //valid_edge <= 0; // Output is not valid when the input gradient is no
-    //         end 
-    //     end
-    // end
