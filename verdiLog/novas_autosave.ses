@@ -26,15 +26,15 @@ fdb_campaign =
 fdb_tool = 
 [hb]
 postSimFile = /home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/waveform.fsdb
-syncTime = 25
-viewport = 0 27 1512 814 0 0 79 1510
-activeNode = "threshold_unit_tb"
-activeScope = "threshold_unit_tb"
-activeFile = "v/threshold_unit_tb.v"
+syncTime = 0
+viewport = 0 22 1512 813 0 0 412 850
+activeNode = "sobel_tb.dut.sg"
+activeScope = "sobel_tb.dut.sg"
+activeFile = "v/sobel_gradient.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 5
+sourceBeginLine = 0
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -52,23 +52,24 @@ traceIncTopPort = False
 leadingZero = False
 signalPane = False
 SourceVerticalScrollLines = 1
-Scope1 = "threshold_unit_tb"
-multipleSelection = 1 17 3 0 0
+Scope1 = "sobel_tb.dut.sg"
+Scope2 = "sobel_tb"
+multipleSelection = 1 5 17 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-full64" "-dbdir" "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv.daidir" 
 invokeDir = /home/josee767/ee478/capstone/sobel_accelerator
 [hb.sourceTab.1]
-scope = threshold_unit_tb
-File = /home/josee767/ee478/capstone/sobel_accelerator/v/threshold_unit_tb.v
-Line = 6
+scope = sobel_tb.dut.sg
+File = /home/josee767/ee478/capstone/sobel_accelerator/v/sobel_gradient.v
+Line = 1
 [nMemoryManager]
 WaveformFile = /home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/waveform.fsdb
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 25 1512 403 100 65
+viewPort = 0 25 1512 438 125 65
 primaryWindow = TRUE
 SessionFile = /home/josee767/ee478/capstone/sobel_accelerator/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

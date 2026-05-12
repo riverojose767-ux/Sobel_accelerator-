@@ -1,6 +1,6 @@
 module image_input #(
     parameter IMAGE_WIDTH  = 128,
-    parameter IMAGE_HEIGHT = 128
+    parameter IMAGE_HEIGHT = 128   
 )(
     input  logic clk,
     input  logic reset,

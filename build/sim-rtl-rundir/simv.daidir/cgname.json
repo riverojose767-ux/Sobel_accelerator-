@@ -5,16 +5,22 @@
         "module",
         1
     ],
+    "bsg_mem_1r1w": [
+        "bsg_mem_1r1w",
+        "mVbpq",
+        "module",
+        2
+    ],
     "sobel_tb": [
         "sobel_tb",
         "cZTZ2",
         "module",
-        2
+        3
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        3
+        4
     ]
 }

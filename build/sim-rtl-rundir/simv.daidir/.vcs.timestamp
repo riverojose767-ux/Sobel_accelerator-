@@ -1,7 +1,8 @@
 2        
 0 bsg_defines.v
 0 /home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/etc/systemverilog/bsg_defines.v
-46
+62
++incdir+/home/josee767/ee478/basejump_stl/bsg_mem
 +incdir+/home/josee767/ee478/basejump_stl/bsg_misc
 +itf+/home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
 +vcsd1
@@ -45,16 +46,31 @@ v/line_buffer.v
 v/sobel_gradient.v
 v/threshold_unit.v
 v/sobel_top.v
+v/adaptive_threshold.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v
+/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v
+/home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v
+/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v
+/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v
 v/sobel_tb.v
 /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
 /home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
 65
 which_declare=declare -f
-XDG_SESSION_ID=5556
+XDG_SESSION_ID=2948
 XDG_RUNTIME_DIR=/run/user/1274959
 XDG_DATA_DIRS=/homes/josee767/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
-VSCODE_IPC_HOOK_CLI=/run/user/1274959/vscode-ipc-0417e386-fa26-4eb2-9923-2204673fee3e.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1274959/vscode-ipc-cd88e47e-12d6-4fed-81a6-d330759d95dc.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/1274959/vscode-git-44d96edf75.sock
 VSCODE_GIT_ASKPASS_NODE=/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/node
 VSCODE_GIT_ASKPASS_MAIN=/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/extensions/git/dist/askpass-main.js
@@ -74,8 +90,8 @@ TERM_PROGRAM=vscode
 S_COLORS=auto
 SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 SSL_CERT_DIR=/etc/pki/tls/certs
-SSH_CONNECTION=10.102.160.203 50954 10.159.224.107 22
-SSH_CLIENT=10.102.160.203 50954 22
+SSH_CONNECTION=10.102.184.83 57731 10.159.224.107 22
+SSH_CLIENT=10.102.184.83 57731 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
 SCRNAME=vcs
@@ -90,8 +106,8 @@ MODULESHOME=/usr/share/Modules
 MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/4
-MAKE_TERMERR=/dev/pts/4
+MAKE_TERMOUT=/dev/pts/18
+MAKE_TERMERR=/dev/pts/18
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES=
@@ -115,16 +131,30 @@ BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
 BASH_FUNC_ml%%=() {  module ml "$@"_}
 BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
 0
-11
-1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v
+25
 1776901854 /home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
 1776901855 /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
-1777614423 v/sobel_tb.v
-1777592789 v/sobel_top.v
-1777613352 v/threshold_unit.v
-1777613372 v/sobel_gradient.v
-1777613414 v/line_buffer.v
-1777592760 v/image_input.v
+1778555392 v/sobel_tb.v
+1776901854 /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v
+1776901854 /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v
+1776901854 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v
+1776901854 /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v
+1776901854 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v
+1776901855 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v
+1778552526 v/adaptive_threshold.v
+1778553551 v/sobel_top.v
+1778554422 v/threshold_unit.v
+1778030066 v/sobel_gradient.v
+1778551279 v/line_buffer.v
+1778551331 v/image_input.v
 1630405584 /home/projects/ee477.2025wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
 1590808341 /home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
 4
@@ -132,5 +162,5 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1590809310 /home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/liberrorinf.so
 1590809251 /home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libsnpsmalloc.so
 1590809285 /home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvfs.so
-1777614561 /home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv.daidir
+1778555418 /home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv.daidir
 -1 partitionlib

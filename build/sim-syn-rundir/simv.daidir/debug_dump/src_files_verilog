@@ -1,7 +1,0 @@
-/home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
-/home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v
-/home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
-/home/josee767/ee478/capstone/sobel_accelerator/build/syn-rundir/sobel_top.mapped.v
-/home/josee767/ee478/capstone/sobel_accelerator/build/tech-sky130-cache/primitives.v
-/home/josee767/ee478/capstone/sobel_accelerator/build/tech-sky130-cache/sky130_fd_sc_hd.v
-/home/josee767/ee478/capstone/sobel_accelerator/v/sobel_tb.v

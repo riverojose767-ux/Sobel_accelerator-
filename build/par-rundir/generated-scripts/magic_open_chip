@@ -1,6 +1,0 @@
-#!/bin/bash
-/home/projects/ee477.2025wtr/cad/magic/bin/magic -d XR -rcfile /home/projects/ee477.2025wtr/cad/pdk/sky130A/libs.tech/magic/sky130A.magicrc /home/josee767/ee478/capstone/sobel_accelerator/build/par-rundir/sobel_top.gds &
-echo 
-echo "### MAGIC launched in the background."
-echo "### Once the GDS has loaded, enter the command 'load sobel_top' to view the top level cell."
-echo 

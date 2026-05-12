@@ -14,6 +14,7 @@ module sobel_top #(
     
 
     input logic [THRESHOLD_WIDTH-1:0] threshold_value,
+    input logic mode, // 0 for fixed threshold, 1 for adaptive threshold
 
 
     //sobel output interface
@@ -81,14 +82,31 @@ module sobel_top #(
         .gradient_magnitude(gradient_magnitude)
     );
 
-    threshold_unit #(.THRESHOLD_WIDTH(THRESHOLD_WIDTH)) tu (
-        .clk(clk),
-        .reset(reset),
+    // threshold_unit #(.THRESHOLD_WIDTH(THRESHOLD_WIDTH)) tu (
+    //     .clk(clk),
+    //     .reset(reset),
+    //     .gradient_magnitude(gradient_magnitude),
+    //     .threshold_value(threshold_value),
+    //     .valid_grad(valid_grad),
+    //     .edge_out(edge_out),
+    //     .valid_edge(valid_edge)
+    // );
+    threshold_unit #(
+        .IMAGE_WIDTH     (IMAGE_WIDTH),
+        .IMAGE_HEIGHT    (IMAGE_HEIGHT),
+        .THRESHOLD_WIDTH (THRESHOLD_WIDTH)
+    ) tu (
+        .clk             (clk),
+        .reset           (reset),
+        .start_frame     (start_stream),
+        .pixel_in        (pixel_stream),   // raw pixel for adaptive stats
+        .valid_in        (valid_stream),   // gates adaptive statistics
         .gradient_magnitude(gradient_magnitude),
-        .threshold_value(threshold_value),
-        .valid_grad(valid_grad),
-        .edge_out(edge_out),
-        .valid_edge(valid_edge)
+        .threshold_value (threshold_value),
+        .mode            (mode),
+        .valid_grad      (valid_grad),
+        .edge_out        (edge_out),
+        .valid_edge      (valid_edge)
     );
 
 endmodule

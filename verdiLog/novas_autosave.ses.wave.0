@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_Q-2020.03-SP2-8
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 25 1512 403 100 65
+viewPort 0 25 1512 438 125 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,8 +16,8 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 59.085000 65.650000
-cursor 25.000000
+zoom 4907798.439023 5011501.074903
+cursor 0.000000
 marker 0.000000
 
 ; user define markers
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 7
+markerPos 15
 
 ; event list
 ; addEvent event_name event_expression
@@ -47,13 +47,21 @@ curSTATUS ByChange
 
 addGroup "G1"
 activeDirFile "" "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/waveform.fsdb"
-addSignal -h 15 /threshold_unit_tb/clk
-addSignal -h 15 -holdScope reset
-addSignal -h 15 -holdScope gradient_magnitude[10:0]
-addSignal -h 15 -holdScope valid_grad
-addSignal -h 15 -holdScope threshold_value[10:0]
-addSignal -h 15 -holdScope edge_out
-addSignal -h 15 -holdScope valid_edge
+addSignal -h 15 /sobel_tb/dut/sg/p1[7:0]
+addSignal -h 15 -holdScope p2[7:0]
+addSignal -h 15 -holdScope p2[7:0]
+addSignal -h 15 -holdScope p3[7:0]
+addSignal -h 15 -holdScope p2[7:0]
+addSignal -h 15 -holdScope p3[7:0]
+addSignal -h 15 -holdScope p4[7:0]
+addSignal -h 15 -holdScope p2[7:0]
+addSignal -h 15 -holdScope p3[7:0]
+addSignal -h 15 -holdScope p4[7:0]
+addSignal -h 15 -holdScope p5[7:0]
+addSignal -h 15 -holdScope p6[7:0]
+addSignal -h 15 -holdScope p7[7:0]
+addSignal -h 15 -holdScope p8[7:0]
+addSignal -h 15 -holdScope p9[7:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

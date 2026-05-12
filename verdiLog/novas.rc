@@ -374,8 +374,8 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-QwWarnMsgDlg = 461,368,600,250
-QwUserAskDlg = 604,421,324,134
+QwWarnMsgDlg = 486,513,600,250
+QwUserAskDlg = 629,566,324,134
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]
@@ -452,7 +452,7 @@ bSVTBMode = TRUE
 SimMode = TRUE
 interactiveDebugging = TRUE
 KeepBreakPoints = FALSE
-vcs_svPath = /home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv
+vcs_svPath = /home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv
 [SimulationPlus2]
 eventDumpUnfinish = FALSE
 [Source]
@@ -569,7 +569,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = Helvetica_M_R_10
 [Text.1]
-viewport = 0 27 1512 814 45
+viewport = 0 27 1512 813 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -709,7 +709,7 @@ scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
 getSignalForm = 0 0 800 479 100 30 100 30
-viewPort = 0 25 1512 155 100 65
+viewPort = 0 25 1512 549 125 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -982,7 +982,8 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = "\"/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/waveform.fsdb\""
+RecentFile1 = "\"/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/waveform.fsdb\""
+RecentFile2 = "\"/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/waveform.fsdb\""
 open_file_time_range = FALSE
 value_window_aligment = Right
 signal_window_alignment = Auto
@@ -1351,7 +1352,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 25 1512 155 100 65
+viewPort = 0 25 1512 549 125 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

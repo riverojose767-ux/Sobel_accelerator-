@@ -1,5 +1,8 @@
 /home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
+/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v
+/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v
 /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
+v/adaptive_threshold.v
 v/image_input.v
 v/line_buffer.v
 v/sobel_gradient.v

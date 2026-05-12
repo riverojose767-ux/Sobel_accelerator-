@@ -1,9 +1,0 @@
-#!/bin/sh -h 
-PYTHONHOME=/home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/etc/search/pyh
-export PYTHONHOME
-PYTHONPATH=/home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/pylib27
-export PYTHONPATH
-LD_LIBRARY_PATH=/home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib:/home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/lib/pylib27
-export LD_LIBRARY_PATH
-/home/projects/ee477.2025wtr/cad/synopsys/vcs/Q-2020.03-SP1/linux64/bin/vcsfind_create_index.exe  -z  "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/debug_dump/fsearch/./idents_KlwI81.xml.gz" -o "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
-\mv "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/josee767/ee478/capstone/sobel_accelerator/build/sim-syn-rundir/simv.daidir/debug_dump/fsearch/fsearch.db"

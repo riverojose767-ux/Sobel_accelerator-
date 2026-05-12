@@ -99,7 +99,28 @@
         "v/line_buffer.v",
         "v/sobel_gradient.v",
         "v/threshold_unit.v",
-        "v/sobel_top.v"
+        "v/sobel_top.v",
+        "v/adaptive_threshold.v",
+        "v/sobel_top.v",
+        "v/line_buffer.v",
+        "v/sobel_gradient.v",
+        "v/threshold_unit.v",
+        "v/image_input.v",
+        "v/adaptive_threshold.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v",
+        "/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v",
+        "/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v",
+        "/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v"
     ],
     "synthesis.inputs.top_module": "sobel_top",
     "synthesis.inputs.preserve_modules": [],
@@ -119,20 +140,42 @@
         }
     ],
     "vlsi.inputs.custom_sdc_constraints": [],
-    "sim.inputs.tb_incdir": [
-        "/home/josee767/ee478/basejump_stl/bsg_misc"
-    ],
-    "sim.inputs.tb_input_files": [
-        "v/sobel_tb.v",
-        "/home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v",
-        "/home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v"
-    ],
     "sim.inputs.input_files": [
         "v/image_input.v",
         "v/line_buffer.v",
         "v/sobel_gradient.v",
         "v/threshold_unit.v",
-        "v/sobel_top.v"
+        "v/sobel_top.v",
+        "v/adaptive_threshold.v",
+        "v/sobel_top.v",
+        "v/line_buffer.v",
+        "v/sobel_gradient.v",
+        "v/threshold_unit.v",
+        "v/image_input.v",
+        "v/adaptive_threshold.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v",
+        "/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v",
+        "/home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v",
+        "/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v",
+        "/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v"
+    ],
+    "sim.inputs.tb_incdir": [
+        "/home/josee767/ee478/basejump_stl/bsg_misc",
+        "/home/josee767/ee478/basejump_stl/bsg_mem"
+    ],
+    "sim.inputs.tb_input_files": [
+        "v/sobel_tb.v",
+        "/home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v",
+        "/home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v"
     ],
     "sim.inputs.tb_name": "sobel_tb"
 }

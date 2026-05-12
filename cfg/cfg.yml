@@ -5,6 +5,7 @@ synthesis.inputs.input_files: [
   "v/sobel_gradient.v",
   "v/threshold_unit.v",
   "v/sobel_top.v",
+  "v/adaptive_threshold.v",
 ]
 synthesis.inputs.input_files_meta: [append, subst]
 
