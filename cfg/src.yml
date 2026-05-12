@@ -7,6 +7,8 @@ synthesis.inputs.input_files: [
   "v/threshold_unit.v",
   "v/image_input.v",
   "v/adaptive_threshold.v",
+  "v/edge_density.v",
+  "v/coord_pipe.v",
   
 
   # TODO: Add any additional BSG files needed

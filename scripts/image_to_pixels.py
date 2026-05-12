@@ -3,7 +3,7 @@ from PIL import Image
 IMG_W = 128
 IMG_H = 128
  
-img = Image.open("input_1.jpg").convert("L")
+img = Image.open("greyscale.png").convert("L")
 img = img.resize((IMG_W, IMG_H))
  
 with open("input_pixels.txt", "w") as f:

@@ -3,6 +3,8 @@
 /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v
 /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
 v/adaptive_threshold.v
+v/coord_pipe.v
+v/edge_density.v
 v/image_input.v
 v/line_buffer.v
 v/sobel_gradient.v

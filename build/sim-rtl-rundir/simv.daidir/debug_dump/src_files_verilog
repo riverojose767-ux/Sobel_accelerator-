@@ -15,6 +15,8 @@
 /home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v
 /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
 /home/josee767/ee478/capstone/sobel_accelerator/v/adaptive_threshold.v
+/home/josee767/ee478/capstone/sobel_accelerator/v/coord_pipe.v
+/home/josee767/ee478/capstone/sobel_accelerator/v/edge_density.v
 /home/josee767/ee478/capstone/sobel_accelerator/v/image_input.v
 /home/josee767/ee478/capstone/sobel_accelerator/v/line_buffer.v
 /home/josee767/ee478/capstone/sobel_accelerator/v/sobel_gradient.v

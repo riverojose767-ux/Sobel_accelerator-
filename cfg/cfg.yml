@@ -6,6 +6,8 @@ synthesis.inputs.input_files: [
   "v/threshold_unit.v",
   "v/sobel_top.v",
   "v/adaptive_threshold.v",
+  "v/edge_density.v",
+  "v/coord_pipe.v",
 ]
 synthesis.inputs.input_files_meta: [append, subst]
 

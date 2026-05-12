@@ -128,27 +128,29 @@ VCS compile option:
  option[41]: v/threshold_unit.v
  option[42]: v/sobel_top.v
  option[43]: v/adaptive_threshold.v
- option[44]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v
- option[45]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v
- option[46]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v
- option[47]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v
- option[48]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v
- option[49]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v
- option[50]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v
- option[51]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v
- option[52]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v
- option[53]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v
- option[54]: /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v
- option[55]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v
- option[56]: /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v
- option[57]: /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v
- option[58]: v/sobel_tb.v
- option[59]: /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
- option[60]: /home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
- option[61]: +incdir+/home/josee767/ee478/basejump_stl/bsg_misc
- option[62]: +incdir+/home/josee767/ee478/basejump_stl/bsg_mem
- option[63]: -load
- option[64]: /home/projects/ee477.2025wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[44]: v/edge_density.v
+ option[45]: v/coord_pipe.v
+ option[46]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v
+ option[47]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v
+ option[48]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v
+ option[49]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v
+ option[50]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v
+ option[51]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v
+ option[52]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v
+ option[53]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v
+ option[54]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v
+ option[55]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v
+ option[56]: /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v
+ option[57]: /home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v
+ option[58]: /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v
+ option[59]: /home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v
+ option[60]: v/sobel_tb.v
+ option[61]: /home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v
+ option[62]: /home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v
+ option[63]: +incdir+/home/josee767/ee478/basejump_stl/bsg_misc
+ option[64]: +incdir+/home/josee767/ee478/basejump_stl/bsg_mem
+ option[65]: -load
+ option[66]: /home/projects/ee477.2025wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
 Chronologic Simulation VCS Release Q-2020.03-SP1_Full64
 Linux 4.18.0-553.123.1.el8_10.x86_64 #1 SMP Tue May 5 04:00:43 EDT 2026 x86_64
 CPU cores: 32
@@ -191,10 +193,8 @@ VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
 DOTNET_BUNDLE_EXTRACT_BASE_DIR=/homes/josee767/.cache/dotnet_bundle_extract
 USER=josee767
 PWD=/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir
-SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 HOME=/homes/josee767
 BROWSER=/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/bin/helpers/browser.sh
-VSCODE_GIT_ASKPASS_NODE=/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/node
 TERM_PROGRAM=vscode
 SSH_CLIENT=10.102.184.83 57731 22
 TERM_PROGRAM_VERSION=1.105.0
@@ -206,20 +206,17 @@ VSCODE_IPC_HOOK_CLI=/run/user/1274959/vscode-ipc-cd88e47e-12d6-4fed-81a6-d330759
 HAMMER_VLSI=/home/josee767/ee478/ee477-hammer-cad/hammer/src/hammer-vlsi
 LOADEDMODULES=
 MAIL=/var/spool/mail/josee767
-VSCODE_GIT_ASKPASS_MAIN=/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/extensions/git/dist/askpass-main.js
 TERM=xterm-256color
 SHELL=/bin/bash
 MAKELEVEL=1
 SHLVL=6
 PYTHONPATH=/home/josee767/ee478/ee477-hammer-cad::/home/josee767/ee478/ee477-hammer-cad/hammer/src:/home/josee767/ee478/ee477-hammer-cad/hammer/src/jsonschema:/home/josee767/ee478/ee477-hammer-cad/hammer/src/python-jsonschema-objects:/home/josee767/ee478/ee477-hammer-cad/hammer/src/hammer-tech:/home/josee767/ee478/ee477-hammer-cad/hammer/src/hammer-vlsi
 MAKE_TERMERR=/dev/pts/18
-VSCODE_GIT_IPC_HANDLE=/run/user/1274959/vscode-git-44d96edf75.sock
 MANPATH=:
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 SSL_CERT_DIR=/etc/pki/tls/certs
 LOGNAME=josee767
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1274959/bus
-GIT_ASKPASS=/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/extensions/git/dist/askpass.sh
 XDG_RUNTIME_DIR=/run/user/1274959
 MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
 PATH=/homes/josee767/.local/bin:/homes/josee767/bin:/home/josee767/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/bin/remote-cli:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/homes/josee767/.dotnet/tools:/homes/josee767/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand :/home/josee767/ee478/ee477-hammer-cad/hammer/src/hammer-shell
@@ -331,71 +328,71 @@ SPECMAN_OUTPUT_TO_TTY=1
 FLEXLM_BORROWFILE=/homes/josee767/.linux-lab-107.ece.uw.edu-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
-250 profile - 100
-          CPU/Mem usage: 0.020 sys,  0.110 user,  305.29M mem
-251 Elapsed time:    0:00:01    Mon May 11 20:13:38 2026
-252 pliAppInit
-253 FSDB_GATE is set.
-254 FSDB_RTL is set.
-255 FSDB_RTL is set.
-256 FSDB_FIELDTYPE is set.
-257 Enable Parallel Dumping.
-258 pliAppMiscSet: New Sim Round
-259 pliEntryInit
-260 LIBSSCORE=found /home/projects/ee477.2025wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/lib/LINUXAMD64/libsscore_vcs202003.so through $NOVAS_HOME setting.
-261 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
-262 (C) 1996 - 2021 by Synopsys, Inc.
-263 sps_call_fsdbDumpfile_main at 0 : v/sobel_tb.v(195)
-264 argv[0]: (waveform.fsdb)
-265 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-266 *Verdi* : Create FSDB file 'waveform.fsdb'
-267 compile option from '/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv.daidir/vcs_rebuild'.
-268   "vcs '-full64' '-override_timescale=1ps/1ps' '-sverilog' '-Mdir=/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir' '-o' '/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv' '-debug_access+all' '-kdb' '-top' 'sobel_tb' 'v/image_input.v' 'v/line_buffer.v' 'v/sobel_gradient.v' 'v/threshold_unit.v' 'v/sobel_top.v' 'v/adaptive_threshold.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v' '/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v' '/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v' '/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v' 'v/sobel_tb.v' '/home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v' '/home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v' '+incdir+/home/josee767/ee478/basejump_stl/bsg_misc' '+incdir+/home/josee767/ee478/basejump_stl/bsg_mem' 2>&1"
-269 DVDI_is_vir_unload_enabled is enable
-270 FSDB_VCS_ENABLE_NATIVE_VC is enable
-271 sps_call_fsdbDumpvars_vd_main at 0 : v/sobel_tb.v(196)
-272 [spi_vcs_vd_ppi_create_root]: no upf option
-273 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
-274 Power dumping is enabled and VIR_REDUCTION may not work.
-275 *Verdi* : Begin traversing the scopes, layer (0).
-276 *Verdi* : End of traversing.
-277 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.120 user,  404.71M mem
-                   incr: 0.000 sys,  0.000 user,  7.70M mem
-                   accu: 0.000 sys,  0.000 user,  7.70M mem
-              accu incr: 0.000 sys,  0.000 user,  7.70M mem
+247 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.110 user,  305.37M mem
+248 Elapsed time:    0:00:01    Mon May 11 22:35:18 2026
+249 pliAppInit
+250 FSDB_GATE is set.
+251 FSDB_RTL is set.
+252 FSDB_RTL is set.
+253 FSDB_FIELDTYPE is set.
+254 Enable Parallel Dumping.
+255 pliAppMiscSet: New Sim Round
+256 pliEntryInit
+257 LIBSSCORE=found /home/projects/ee477.2025wtr/cad/synopsys/verdi/Q-2020.03-SP2-8/share/PLI/lib/LINUXAMD64/libsscore_vcs202003.so through $NOVAS_HOME setting.
+258 FSDB Dumper for VCS, Release Verdi_Q-2020.03-SP2-8, Linux x86_64/64bit, 08/31/2021
+259 (C) 1996 - 2021 by Synopsys, Inc.
+260 sps_call_fsdbDumpfile_main at 0 : v/sobel_tb.v(195)
+261 argv[0]: (waveform.fsdb)
+262 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+263 *Verdi* : Create FSDB file 'waveform.fsdb'
+264 compile option from '/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv.daidir/vcs_rebuild'.
+265   "vcs '-full64' '-override_timescale=1ps/1ps' '-sverilog' '-Mdir=/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir' '-o' '/home/josee767/ee478/capstone/sobel_accelerator/build/sim-rtl-rundir/simv' '-debug_access+all' '-kdb' '-top' 'sobel_tb' 'v/image_input.v' 'v/line_buffer.v' 'v/sobel_gradient.v' 'v/threshold_unit.v' 'v/sobel_top.v' 'v/adaptive_threshold.v' 'v/edge_density.v' 'v/coord_pipe.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_defines.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_counter_clock_downsample.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_strobe.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_dff.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_xnor.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_mux2_gatestack.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_muxi2_gatestack.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nand.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_nor3.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_reduce.v' '/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_synth.v' '/home/josee767/ee478/basejump_stl/bsg_misc/bsg_buf.v' '/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w.v' '/home/josee767/ee478/basejump_stl/bsg_mem/bsg_mem_1r1w_sync.v' 'v/sobel_tb.v' '/home/josee767/ee478/basejump_stl/bsg_test/bsg_nonsynth_clock_gen.v' '/home/josee767/ee478/basejump_stl/bsg_clk_gen/bsg_nonsynth_clk_watcher.v' '+incdir+/home/josee767/ee478/basejump_stl/bsg_misc' '+incdir+/home/josee767/ee478/basejump_stl/bsg_mem' 2>&1"
+266 DVDI_is_vir_unload_enabled is enable
+267 FSDB_VCS_ENABLE_NATIVE_VC is enable
+268 sps_call_fsdbDumpvars_vd_main at 0 : v/sobel_tb.v(196)
+269 [spi_vcs_vd_ppi_create_root]: no upf option
+270 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+271 Power dumping is enabled and VIR_REDUCTION may not work.
+272 *Verdi* : Begin traversing the scopes, layer (0).
+273 *Verdi* : End of traversing.
+274 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.110 user,  404.78M mem
+                   incr: 0.000 sys,  0.000 user,  7.72M mem
+                   accu: 0.000 sys,  0.000 user,  7.72M mem
+              accu incr: 0.000 sys,  0.000 user,  7.72M mem
 
-          Count usage: 187 var,  173 idcode,  62 callback
-                 incr: 187 var,  173 idcode,  62 callback
-                 accu: 187 var,  173 idcode,  62 callback
-            accu incr: 187 var,  173 idcode,  62 callback
-278 Elapsed time:    0:00:01    Mon May 11 20:13:38 2026
-279 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.020 sys,  0.120 user,  405.77M mem
-                   incr: 0.000 sys,  0.000 user,  1.06M mem
-                   accu: 0.000 sys,  0.000 user,  8.75M mem
-              accu incr: 0.000 sys,  0.000 user,  1.06M mem
+          Count usage: 239 var,  225 idcode,  75 callback
+                 incr: 239 var,  225 idcode,  75 callback
+                 accu: 239 var,  225 idcode,  75 callback
+            accu incr: 239 var,  225 idcode,  75 callback
+275 Elapsed time:    0:00:01    Mon May 11 22:35:18 2026
+276 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.110 user,  405.84M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.000 sys,  0.000 user,  8.77M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 187 var,  173 idcode,  62 callback
+          Count usage: 239 var,  225 idcode,  75 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 187 var,  173 idcode,  62 callback
+                 accu: 239 var,  225 idcode,  75 callback
             accu incr: 0 var,  0 idcode,  0 callback
-280 Elapsed time:    0:00:01    Mon May 11 20:13:38 2026
-281 End of simulation at 261247500
-282 Elapsed time:    0:00:03    Mon May 11 20:13:40 2026
-283 Begin FSDB profile info:
-284 FSDB Writer : bc1(38241) bcn(605731) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.214082) io wait(0.000000) theadpool wait(0.000000)
+277 Elapsed time:    0:00:01    Mon May 11 22:35:18 2026
+278 End of simulation at 261247500
+279 Elapsed time:    0:00:01    Mon May 11 22:35:18 2026
+280 Begin FSDB profile info:
+281 FSDB Writer : bc1(39515) bcn(631714) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.124706) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-285 End FSDB profile info
-286 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-287                      - BlockUsed:7 Acquire:678743 BufferUsed:10592292
-288                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:5
-289                      - MainProducerTime:0.303788221 TotalConsumerTime:0.016227005
-290                      - ElapsedTime:2.427985000
-291 Producer   0 profile - BlockUsed:7 Acquire:678743 BufferUsed:10592292
-292 Consumer   0 profile - Affinity:-1 CPUTime:0.016227005 LifeTime:1.705170703 (0.01%)
-293                      - BlockUsed:7 Acquire:678743 BufferUsed:10592292
-294 SimExit
-295 Elapsed time:    0:00:03    Mon May 11 20:13:40 2026
-296 Sim process exit
+282 End FSDB profile info
+283 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+284                      - BlockUsed:7 Acquire:705987 BufferUsed:11019285
+285                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:5
+286                      - MainProducerTime:0.243821222 TotalConsumerTime:0.016609451
+287                      - ElapsedTime:0.432660000
+288 Producer   0 profile - BlockUsed:7 Acquire:705987 BufferUsed:11019285
+289 Consumer   0 profile - Affinity:-1 CPUTime:0.016609451 LifeTime:0.036052713 (0.46%)
+290                      - BlockUsed:7 Acquire:705987 BufferUsed:11019285
+291 SimExit
+292 Elapsed time:    0:00:02    Mon May 11 22:35:19 2026
+293 Sim process exit
